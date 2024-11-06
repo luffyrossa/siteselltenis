@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Venda de Tênis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Tênis Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="/carrinho">Carrinho</a></li> <!-- Link para a página do carrinho -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Encontre o Tênis Perfeito</h1>
+            <p>Conforto e estilo para todas as ocasiões.</p>
+            <a href="#produtos" class="cta-button">Ver Produtos</a>
+        </div>
+        <video class="hero-video" autoplay loop muted>
+            <source src="/videos/amostra_tenis.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/tenis1.jpg" alt="Tênis 1">
+                <h3>Tênis Modelo 1</h3>
+                <p>R$ 199,99</p>
+                <button onclick="adicionarAoCarrinho({nome: 'Tênis Modelo 1', preco: 199.99, imagem: '/images/tenis1.jpg'})">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="/images/tenis2.jpg" alt="Tênis 2">
+                <h3>Tênis Modelo 2</h3>
+                <p>R$ 249,99</p>
+                <button onclick="adicionarAoCarrinho({nome: 'Tênis Modelo 1', preco: 249.99, imagem: '/images/tenis2.jpg'})">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="/images/tenis1.jpg" alt="Tênis 3">
+                <h3>Tênis Modelo 3</h3>
+                <p>R$ 179,99</p>
+                <button onclick="adicionarAoCarrinho({nome: 'Tênis Modelo 1', preco: 179.99, imagem: '/images/tenis1.jpg'})">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="/images/tenis2.jpg" alt="Tênis 4">
+                <h3>Tênis Modelo 4</h3>
+                <p>R$ 299,99</p>
+                <button onclick="adicionarAoCarrinho({nome: 'Tênis Modelo 1', preco: 299.99, imagem: '/images/tenis2.jpg'})">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="/images/tenis1.jpg" alt="Tênis 5">
+                <h3>Tênis Modelo 5</h3>
+                <p>R$ 329,99</p>
+                <button onclick="adicionarAoCarrinho({nome: 'Tênis Modelo 1', preco: 329.99, imagem: '/images/tenis1.jpg'})">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Continue adicionando mais modelos de tênis conforme necessário -->
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>© 2024 Tênis Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
